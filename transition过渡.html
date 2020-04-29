@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>过渡</title>
+    <style>
+        .box {
+            position: relative;
+        }
+        
+        #demo {
+            width: 500px;
+            height: 500px;
+            border: 5px dotted blue;
+            /* border-top-color: plum 5px solid; */
+            transition: all 5s;
+            background-color: pink;
+            /* visibility: visible; */
+            font-size: 100px;
+            /* line-height: 1000px; */
+            line-height: 500px;
+            text-align: center;
+            color: blue;
+            overflow: hidden;
+        }
+        
+        #demo:hover {
+            width: 100px;
+            height: 100px;
+            /* visibility: hidden; */
+            background-color: blue;
+        }
+        
+        #hejiajin {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 500px;
+            height: 500px;
+            border: 5px dashed blue;
+            border-radius: 50%;
+            transition: all 5s;
+            background-color: skyblue;
+            /* visibility: visible; */
+            font-size: 50px;
+            /* line-height: 1000px; */
+            color: palegreen;
+            line-height: 500px;
+            text-align: center;
+            overflow: hidden;
+        }
+        
+        #hejiajin:hover {
+            width: 200px;
+            height: 200px;
+            /* visibility: hidden; */
+            background-color: peru;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div id="demo">
+            小小辉奥利给！!
+
+        </div>
+        <div id="hejiajin">
+            阿辉奥利给！
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
