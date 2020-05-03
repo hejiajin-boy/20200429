@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #demo {
+            height: 300px;
+            width: 300px;
+            border: 1px solid palevioletred;
+            margin: 150px;
+        }
+        
+        #demo:hover {
+            /* transform: skewX(45deg); */
+            /* X轴倾斜45度 */
+            transform: skewY(45deg);
+            /* Y轴倾斜90度 */
+        }
+        
+        .wrapper {
+            perspective: 1000px;
+            border: 5px solid blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="demo"></div>
+    </div>
+</body>
+
+</html>
