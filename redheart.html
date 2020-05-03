@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>red heart</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        #box {
+            display: inline-block;
+            margin: 100px;
+            position: relative;
+            /* background-color: red; */
+            /* border: 1px solid palegreen; */
+            animation: .3s heart infinite alternate-reverse;
+        }
+        
+        #box:hover {
+            transform: scale(1.2);
+        }
+        
+        #box>.left {
+            width: 100px;
+            height: 100px;
+            /* border: palegreen 1px solid; */
+            background: purple;
+            transform: rotate(45deg) translateX(62px);
+            /* 旋转45度，向X轴移动31像素 */
+            position: absolute;
+            bottom: 100px;
+            left: -100px;
+            border-radius: 50% 0 0 50%;
+        }
+        
+        #box>.right {
+            width: 100px;
+            height: 100px;
+            /* border: palegreen 1px solid; */
+            background: purple;
+            transform: rotate(45deg) translateY(62px);
+            /* 旋转45度，向Y轴移动31像素 */
+            position: absolute;
+            bottom: 100px;
+            right: -100px;
+            border-radius: 50% 50% 0 0;
+        }
+        
+        #box .bottom {
+            background: purple;
+            width: 100px;
+            height: 100px;
+            transform: rotate(45deg);
+        }
+        
+        #name {
+            position: absolute;
+            /* top: 50px; */
+            right: 230px;
+            bottom: 60px;
+            color: royalblue;
+        }
+        
+        #box1 {
+            display: inline-block;
+            margin: 100px;
+            position: relative;
+            /* background-color: red; */
+            /* border: 1px solid palegreen; */
+            /* transition: all 1s; */
+            animation: 1s heart infinite alternate-reverse;
+        }
+        
+        @keyframes heart {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(2);
+            }
+        }
+        /* #box1:hover {
+            transform: scale(1.2);
+        }
+         */
+        
+        #box1>.left1 {
+            width: 50px;
+            height: 50px;
+            /* border: palegreen 1px solid; */
+            background: red;
+            transform: rotate(45deg) translateX(31px);
+            /* 旋转45度，向X轴移动31像素 */
+            position: absolute;
+            bottom: 50px;
+            left: -50px;
+            border-radius: 50% 0 0 50%;
+        }
+        
+        #box1>.right1 {
+            width: 50px;
+            height: 50px;
+            /* border: palegreen 1px solid; */
+            background: red;
+            transform: rotate(45deg) translateY(31px);
+            /* 旋转45度，向Y轴移动31像素 */
+            position: absolute;
+            bottom: 50px;
+            right: -50px;
+            border-radius: 50% 50% 0 0;
+        }
+        
+        #box1 .bottom1 {
+            background: red;
+            width: 50px;
+            height: 50px;
+            transform: rotate(45deg);
+        }
+        
+        #name1 {
+            position: absolute;
+            /* top: 50px; */
+            right: 230px;
+            bottom: 60px;
+            color: royalblue;
+        }
+        
+        #box2 {
+            display: inline-block;
+            margin: 100px;
+            position: relative;
+            /* background-color: red; */
+            /* border: 1px solid palegreen; */
+            transition: all 1s;
+        }
+        
+        #box2:hover {
+            transform: scale(1.2);
+        }
+        
+        #box2>.left2 {
+            width: 50px;
+            height: 50px;
+            /* border: palegreen 1px solid; */
+            background: red;
+            transform: rotate(45deg) translateX(31px);
+            /* 旋转45度，向X轴移动31像素 */
+            position: absolute;
+            bottom: 50px;
+            left: -50px;
+            border-radius: 50% 0 0 50%;
+        }
+        
+        #box2>.right2 {
+            width: 50px;
+            height: 50px;
+            /* border: palegreen 1px solid; */
+            background: red;
+            transform: rotate(45deg) translateY(31px);
+            /* 旋转45度，向Y轴移动31像素 */
+            position: absolute;
+            bottom: 50px;
+            right: -50px;
+            border-radius: 50% 50% 0 0;
+        }
+        
+        #box2 .bottom2 {
+            background: red;
+            width: 50px;
+            height: 50px;
+            transform: rotate(45deg);
+        }
+        
+        #box3 {
+            display: inline-block;
+            margin: 100px;
+            position: relative;
+            /* background-color: red; */
+            /* border: 1px solid palegreen; */
+            transition: all 1s;
+        }
+        
+        #box3:hover {
+            transform: scale(1.2);
+        }
+        
+        #box3>.left3 {
+            width: 50px;
+            height: 50px;
+            /* border: palegreen 1px solid; */
+            background: red;
+            transform: rotate(45deg) translateX(31px);
+            /* 旋转45度，向X轴移动31像素 */
+            position: absolute;
+            bottom: 50px;
+            left: -50px;
+            border-radius: 50% 0 0 50%;
+        }
+        
+        #box3>.right3 {
+            width: 50px;
+            height: 50px;
+            /* border: palegreen 1px solid; */
+            background: red;
+            transform: rotate(45deg) translateY(31px);
+            /* 旋转45度，向Y轴移动31像素 */
+            position: absolute;
+            bottom: 50px;
+            right: -50px;
+            border-radius: 50% 50% 0 0;
+        }
+        
+        #box3 .bottom3 {
+            background: red;
+            width: 50px;
+            height: 50px;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="bottom">
+            欧力给！
+        </div>
+
+
+
+    </div>
+    <!-- <span id="name">曹坤</span> -->
+    <div id="box1">
+        <div class="left1"></div>
+        <div class="right1"></div>
+        <div class="bottom1">
+
+        </div>
+
+
+
+    </div>
+    <!-- <span id="name1">曹坤</span> -->
+    <div id="box2">
+        <div class="left2"></div>
+        <div class="right2"></div>
+        <div class="bottom2">
+
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
